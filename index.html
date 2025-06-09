@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="flex-column">
+    <header class="color-primary text-light flex-column text-center">
+        <h1>Weather App</h1>
+    </header>
+
+    <main class="flex-column">
+
+        <section class="flex-column" id="citySearch">
+
+            <div class="flex-column py-1">
+                <div class="form-input mx-auto">
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="cityInput">
+                </div>
+            </div>
+
+            <div class="mx-auto">
+                <button class="btn-dark" id="citySearchButton">Search</button>
+            </div>
+
+        </section>
+
+        <hr class="width-80 mx-auto">
+
+        <section class="flex-column px-3" id="weatherSection">
+            <div class="mx-auto text-center" id="loader">
+                <p>Loading. . .</p>
+                <div class="loader"></div>
+            </div>
+            
+
+            <h2 class="text-center" id="cityNameTitle"></h2>
+            <div id="weather" class="grid-container">
+                
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
